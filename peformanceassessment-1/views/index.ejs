@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+		<h2><%= myname %></h2>
+		<h1><%= title %></h1>
+
+		<ul>
+			<% stack.forEach(function(item) { %>
+			<li><%= item.name %> : <%= item.description %></li>
+			<% }); %>
+		</ul>
+	</body>
+</html>
